@@ -2995,7 +2995,7 @@
 
       var main = this.main_painter(),
           fp = this.frame_painter();
-      if ((main !== this) && main.fContour) {
+      if (main && (main !== this) && main.fContour) {
          this.fContour = main.fContour;
          this.fCustomContour = main.fCustomContour;
          this.colzmin = main.colzmin;
