@@ -490,7 +490,7 @@
          if (!factoryFunc)
             return new Promise(resolve => {
                if (need.length > 0)
-                  require(need, resolve);
+                  include(need).then(() => resolve());
                else
                   resolve();
             });
@@ -1210,7 +1210,7 @@
              !((this.status == 0) && ((url.indexOf("file://")==0) || (url.indexOf("blob:")==0)))) {
                return this.error_callback(Error('Fail to load url ' + url), this.status);
          }
-
+/*
          if (this.nodejs_checkzip && (this.getResponseHeader("content-encoding") == "gzip")) {
             // special handling of gzipped JSON objects in Node.js
             let zlib = require('zlib'),
@@ -1218,7 +1218,7 @@
                 obj = JSON.parse(res); // zlib returns Buffer, use JSON to parse it
             return this.http_callback(JSROOT.parse(obj));
          }
-
+*/
          switch(this.kind) {
             case "xml": return this.http_callback(this.responseXML);
             case "text": return this.http_callback(this.responseText);

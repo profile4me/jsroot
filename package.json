@@ -1,5 +1,5 @@
 {
-  "name": "jsroot",
+  "name": "@profile4me/jsroot",
   "version": "6.2.99",
   "engines": {
     "node": ">=0.10"
@@ -28,7 +28,6 @@
     "mathjax": "3.1.2",
     "three": "^0.127.0",
     "xhr2": "^0.2.1",
-    "zlib": "^1.0.5",
     "zstd-codec": "^0.1.2"
   },
   "repository": {
