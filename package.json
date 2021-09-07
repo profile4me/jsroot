@@ -1,6 +1,6 @@
 {
   "name": "@profile4me/jsroot",
-  "version": "6.2.99",
+  "version": "6.3.0",
   "engines": {
     "node": ">=0.10"
   },
@@ -32,7 +32,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/root-project/jsroot.git"
+    "url": "https://github.com/profile4me/jsroot.git"
   },
   "files": [
     "scripts/*",
